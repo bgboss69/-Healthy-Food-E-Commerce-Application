@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProceedActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="center"
+                android:text="\uf060"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+            <TextView
+                style="@android:style/TextAppearance.Material.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Checkout"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center|center"
+            android:background="#FAF1D3"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FAF1D3"
+                android:gravity="center|center"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:context=".UserProfileActivity">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#D9D9D9"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font_awesome"
+                                android:gravity="bottom|right"
+                                android:text="\uf555"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:gravity="bottom|right"
+                                android:text=" Payment Methods"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="50dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:gravity="start"
+                                android:text="RazorPay"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#D9D9D9"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font_awesome"
+                                android:gravity="bottom|right"
+                                android:text="\uf543"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:gravity="bottom|right"
+                                android:text=" Order Summary"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="50dp"
+                            android:paddingBottom="20dp">
+
+                            <TextView
+                                android:id="@+id/summary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#D9D9D9"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font_awesome"
+                                android:gravity="bottom|right"
+                                android:text="\uf53a"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:gravity="bottom|right"
+                                android:text=" Total"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="50dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:gravity="start"
+                                android:text="RM "
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="50"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="Checkout"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

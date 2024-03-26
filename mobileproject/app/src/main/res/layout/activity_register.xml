@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MobileProject.NoActionBar"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF1D3"
+        android:gravity="center|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".RegisterActivity">
+
+<!-- -->
+<!--            this code is use to ignore if miising content-->
+<!--            tools:ignore="MissingConstraints"-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="GreenEats"
+            android:textColor="#000000"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Register"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="bottom|right"
+                android:text="\uf007"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Full Name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="bottom|right"
+                android:text="\uf0e0"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Email" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="bottom|right"
+                android:text="\uf084"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textPassword"
+                android:hint="Password" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:textColor="@color/white"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                style="@android:style/TextAppearance.Material.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Already Registered?"
+                android:textAlignment="textEnd"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign In"
+                android:textColor="#FF0000"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

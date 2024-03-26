@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#646464"
+    android:theme="@style/Theme.MobileProject.NoActionBar"
+    tools:context=".nav">
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="center"
+                android:text="\uf0c9"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary"
+            android:gravity="center|center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@android:style/TextAppearance.Material.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="tang shuian liang"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <TextView
+                style="@android:style/TextAppearance.Material.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:id="@+id/tv_email"
+                android:text="tsl@gmail.com"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#FAF1D3"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FAF1D3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/home"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="center"
+                android:text="\uf015"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="Home"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FAF1D3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/profile"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="center"
+                android:text="\uf007"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="Profile"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FAF1D3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/cart"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="center"
+                android:text="\uf07a"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="My Cart"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FAF1D3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/history"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/font_awesome"
+                android:gravity="center"
+                android:text="\uf1da"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="History"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FAF1D3"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="bottom">
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="30sp">
+            </Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
